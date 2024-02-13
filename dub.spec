@@ -6,14 +6,14 @@
 
 Name:           dub
 Version:        1.33.1
-Release:        %autorelease
+Release:        %autorelease -e rv64
 Summary:        Package and build management system for D
 
 License:        MIT
 URL:            https://github.com/dlang/dub
 Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 
-ExclusiveArch:  %{ldc_arches}
+ExclusiveArch:  %{ldc_arches} riscv64
 
 BuildRequires:  curl-devel
 BuildRequires:  ldc
